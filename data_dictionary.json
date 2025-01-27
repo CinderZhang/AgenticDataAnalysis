@@ -46,5 +46,11 @@
     },
     "Segment_Data.csv": {
         "description": "new description"
+    },
+    "Compustat Annual SIC 5200-5999 AMZN BestBuy etc.csv": {
+        "description": "This is Compustat Annual for the companies in SIC code of 5200-5999"
+    },
+    "TSLA.csv": {
+        "description": "This is tsla daily price and volume dataset."
     }
 }
