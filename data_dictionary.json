@@ -52,5 +52,8 @@
     },
     "TSLA.csv": {
         "description": "This is tsla daily price and volume dataset."
+    },
+    "nvda_option_hist_data.csv": {
+        "description": "NVDA stock Put and Call options on Jan, 27th, 2025. for all expiration dates"
     }
 }

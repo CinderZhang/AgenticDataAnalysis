@@ -2,11 +2,7 @@
 
 An AI-powered data analysis agent built with LangGraph that can perform intelligent analysis on your datasets. This project demonstrates advanced LangGraph techniques and provides an interactive Streamlit dashboard for data exploration.
 
-## Demo
 
-Take a look at the demo video below:
-
-https://github.com/user-attachments/assets/83bdc543-85ca-49c0-83a5-39d948f74286
 
 ## Features
 
@@ -73,7 +69,7 @@ OPENAI_API_KEY=your-api-key-here
 
 1. Start the Streamlit dashboard:
 ```powershell
-streamlit run data_analysis_streamlit_app.py
+streamlit run data_analysis_streamlit_app.py --server.maxUploadSize 2000
 ```
 
 2. Upload your dataset(s):

@@ -12,3 +12,4 @@ __pycache__/
 agentds
 build/
 .env
+.venv
