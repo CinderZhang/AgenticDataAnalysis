@@ -30,7 +30,7 @@ https://github.com/user-attachments/assets/83bdc543-85ca-49c0-83a5-39d948f74286
    - Open Command Prompt or PowerShell
    - Navigate to your desired directory
 ```powershell
-git clone https://github.com/YourUsername/AgenticDataAnalysis.git
+git clone https://github.com/CinderZhang/AgenticDataAnalysis.git
 cd AgenticDataAnalysis
 ```
 
