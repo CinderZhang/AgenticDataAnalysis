@@ -31,7 +31,7 @@ class PythonChatbot:
             "input_data": input_data,
         }
 
-        result = self.graph.invoke(input_state, {"recursion_limit": 25})
+        result = self.graph.invoke(input_state, {"recursion_limit": 50})
         self.chat_history = result["messages"]
         new_image_paths = set(result["output_image_paths"]) - starting_image_paths_set
         self.output_image_paths[len(self.chat_history) - 1] = list(new_image_paths)

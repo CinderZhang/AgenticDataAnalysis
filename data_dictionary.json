@@ -55,5 +55,8 @@
     },
     "nvda_option_hist_data.csv": {
         "description": "NVDA stock Put and Call options on Jan, 27th, 2025. for all expiration dates"
+    },
+    "NVDA_options_data_20250130.csv": {
+        "description": "Option pricing data for NVDA TSLA SPY"
     }
 }

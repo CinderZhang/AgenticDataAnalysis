@@ -49,12 +49,14 @@ def route_to_tools(
 
     if messages := state.get("messages", []):
         ai_message = messages[-1]
+        if isinstance(ai_message, AIMessage):  # Only check AI messages
+            if hasattr(ai_message, "tool_calls") and len(ai_message.tool_calls) > 0:
+                return "tools"
+            return "__end__"  # If AI generates a response without tool calls, we're done
     else:
         raise ValueError(f"No messages found in input state to tool_edge: {state}")
     
-    if hasattr(ai_message, "tool_calls") and len(ai_message.tool_calls) > 0:
-        return "tools"
-    return "__end__"
+    return "__end__"  # Default to ending if we can't determine what to do
 
 def call_model(state: AgentState):
 
@@ -97,4 +99,3 @@ def call_tools(state: AgentState):
 
     state_updates["messages"] = tool_messages 
     return state_updates
-
